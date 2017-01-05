@@ -26,7 +26,7 @@ fi
 
 PDF_VIEWER="evince"
 LOCATION="$HOME/Documents/man/"
-OUTPUT="$LOCATION$1.pdf"
+OUTPUT="${LOCATION}$1.pdf"
 TMP_FILE="__$1_tmp.ps"
 
 if [ ! -d $LOCATION ]; then
