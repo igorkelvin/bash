@@ -8,9 +8,9 @@
 # https://github.com/igorkelvin
 #
 # Small script to download and read 'man' pages as pdf.
-# It is not much fail-safe and was designed for my own use, so it
-# don't include options at all. Feel free to copy and modify as
-# you with.
+# It is not much fail-safe as I designed for my own use, so it
+# don't include any options at all. Feel free to copy and modify as
+# you want.
 #
 # Two things you may want to change if you want to use this:
 # 1- 'LOCATION' variable to your desired save location.
@@ -19,9 +19,9 @@
 #
 
 if [[ $# -eq 0 || $# -gt 1 ]] ; then
-    echo    "Usage: "
-    echo -e "  bash /path/to/man2pdf.sh 'manual_entry'"
-    exit 1
+  echo    "Usage: "
+  echo -e "  bash /path/to/man2pdf.sh 'manual_entry'"
+  exit 1
 fi
 
 PDF_VIEWER="evince"
